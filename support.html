@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symplissime - Support AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="logo.png" alt="Symplissime" style="height:40px; width:auto;"></div>
+      <ul>
+        <li><a href="#"><img src="icon1.svg" alt=""> Accueil</a></li>
+        <li><a href="#"><img src="icon2.svg" alt=""> Mes ordinateurs</a></li>
+        <li><a href="#"><img src="icon3.svg" alt=""> Mes sauvegardes</a></li>
+        <li><a href="#"><img src="icon4.svg" alt=""> Shop</a></li>
+        <li><a href="#" class="active"><img src="icon5.svg" alt=""> Symplissime AI</a></li>
+        <li><a href="#"><img src="icon6.svg" alt=""> Mon compte</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="devices-section">
+      <h2>Assistance Symplissime AI</h2>
+      <div class="support-container">
+        <div class="support-intro">
+          <h3>Besoin d'aide ?</h3>
+          <p>Notre assistant IA Symplissime est là pour vous aider avec vos questions techniques, la gestion de vos appareils et vos sauvegardes.</p>
+        </div>
+        
+        <!-- AnythingLLM Widget Container -->
+        <div id="anything-llm-chat-widget"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-background">
+      <img src="footer-leaves.svg" alt="Leaves background">
+    </div>
+    <div class="footer-text">
+      Copyright 2025 Starware. Tous droits réservés. Les différentes marques mentionnées appartiennent à leur propriétaire respectif. Starware.com SAS.
+    </div>
+  </footer>
+
+  <!-- AnythingLLM Widget Script -->
+  <script
+    id="anything-llm-chat-widget-script"
+    data-embed-id="symplissime-support"
+    data-base-api-url="https://app.anythingllm.com"
+    data-default-messages="Bonjour ! Je suis l'assistant IA Symplissime. Comment puis-je vous aider aujourd'hui ?"
+    data-window-height="700"
+    data-window-width="400"
+    data-position="bottom-right"
+    data-open-on-load="false"
+    data-support-email="support@symplissime.com"
+    data-brand-color="#219769"
+    data-text-color="#FFFFFF"
+    data-assistant-name="Assistant Symplissime"
+    data-assistant-icon="💚"
+    data-window-title="Assistance Symplissime AI"
+    data-greeting="Salut ! Comment puis-je vous aider avec Symplissime ?"
+    src="https://cdn.anythingllm.com/chat-widget.js">
+  </script>
+
+  <style>
+    .support-container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 24px;
+      box-shadow: 0 2px 12px rgba(33, 151, 105, 0.1);
+    }
+    
+    .support-intro {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    
+    .support-intro h3 {
+      color: #219769;
+      font-size: 1.8em;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    
+    .support-intro p {
+      color: #219769;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    #anything-llm-chat-widget {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 2px dashed #A1D44B;
+      color: #219769;
+      font-style: italic;
+    }
+    
+    #anything-llm-chat-widget::before {
+      content: "Le widget d'assistance AI se chargera ici...";
+    }
+  </style>
+</body>
+</html>
